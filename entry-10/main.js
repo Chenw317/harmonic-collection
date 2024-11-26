@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html>
-<body>
+var closeButton = document.getElementById('closeButton');
+var alertBox = document.querySelector('.alert');
+var notes = document.querySelector('.notes');
+var sparkle = document.getElementById('sparkle');
 
-<h2>JavaScript Alert</h2>
+closeButton.addEventListener('click', function(){
+  alertBox.style.display = 'none';
+})
 
-<button onclick="myFunction()">Click me to see potentical allergens!</button>
+notes.addEventListener('mouseover', function(){
+  sparkle.classList.add('show');
+})
 
-<script>
-function myFunction() {
-  alert("This recipe has Wheat flour and yeast!!");
-}
-</script>
-
-</body>
-</html>
+const list = document.getElementById('ingredients-list');
+    list.addEventListener('click', function(e) {
+      if (e.target.tagName === 'LI') {
+        e.target.classList.toggle('crossed-off');
+      }
+    });
