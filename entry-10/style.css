@@ -43,7 +43,7 @@ body {
 }
 
 .home-button:hover {
-      background-color: #f16ea5; /* Green */
+      background-color: #f16ea5; 
       color: white;
 }
 
@@ -78,7 +78,6 @@ h1{
     padding: 0;
   }
 
-  #ingredients-list{
     
   }
   li {
@@ -96,6 +95,7 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
+    font-size: 60px;
   }
 
   .contents{
