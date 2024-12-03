@@ -12,7 +12,7 @@ body {
 
 /* play around with this for heading */
 .contents{
-  margin-top: 100vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
   margin-right: 10vw;
   margin-left: 10vw;
@@ -24,6 +24,7 @@ body {
         font-family: "Poiret One", sans-serif;
         font-weight: 300;
         font-style: normal;
+        font-size: 18px;
 
 }
 
@@ -50,6 +51,7 @@ body {
 .header{
   display: flex;
   width: auto;
+  font-size: 40px;
 }
 
 h1{
@@ -95,7 +97,7 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
-    font-size: 60px;
+    font-size: 60px !important ;
   }
 
   .contents{
@@ -124,10 +126,10 @@ h1{
   .header-img{
     width: 100vw;
     display: flex;
-    position: absolute;
+    /* position: absolute;
     top:0;
     left:0;
-    z-index: -1;
+    z-index: -1; */
   }
 
   .header-img img{
